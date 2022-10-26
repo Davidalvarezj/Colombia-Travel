@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="./style.css" />
 
@@ -15,32 +17,32 @@
 </head>
 <body>
        <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
-        <div class="container ">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container contnav">
             <a class="navbar-brand " href="#"><h5 class="pt-1 pl-lg-5">Colombia Travel <i class="fa fa-plane fa-sx" aria-hidden="true"></i></h5></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapse1"><span class="navbar-toggler-icon"></span></button>
             <div class="colapse navbar-collapse justify-content-end pr-lg-5" id="colapse1">
                 <ul class="navbar-nav nav">
-                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="val"></span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Medellin</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">City tour</a>
-                            <a class="dropdown-item" href="#">Guatape</a>
-                            <a class="dropdown-item" href="#">Grafity tour</a>
+                     <li class="nav-item dropdown "><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Medellin</a>
+                        <div class="dropdown-menu ">
+                            <a class="dropdown-item text-white" href="#">City tour</a>
+                            <a class="dropdown-item text-white" href="#">Guatape</a>
+                            <a class="dropdown-item text-white" href="#">Grafity tour</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">San Andres</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">City tour</a>
-                            <a class="dropdown-item" href="#">Jhony Kay island</a>
+                            <a class="dropdown-item text-white" href="#">City tour</a>
+                            <a class="dropdown-item text-white" href="#">Jhony Kay Island</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Cartajena</a>
                          <div class="dropdown-menu">
-                             <a class="dropdown-item" href="#">City tour</a>
-                            <a class="dropdown-item" href="#">Rosario Island</a>
-                            <a class="dropdown-item" href="#">Baru Beach</a>
+                             <a class="dropdown-item text-white" href="#">City tour</a>
+                            <a class="dropdown-item text-white" href="#">Rosario Island</a>
+                            <a class="dropdown-item text-white" href="#">Baru Beach</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -60,26 +62,57 @@
           <li data-target="#demo" data-slide-to="3"></li>
           <li data-target="#demo" data-slide-to="4"></li>
           <li data-target="#demo" data-slide-to="5"></li>
+
         </ul>
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/San-andres/San-andres.webp" class=" d-block " alt="Los Angeles" width="1100" height="500">
+                <img src="./img/San-andres/San-andres.webp" class=" d-block " style="filter: brightness(70%)" alt="Los Angeles" width="1100" height="500">
+                <div class="carousel-caption">
+                    <h1>San Andres</h1>
+                    <p>Explore the island with an amazing sea!</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/Cartajena/colombia-wideangle-view-scenic-cartagena-bay-bocagrande-panoramic-city-skyline_451699-1583.jpg" class="mx-auto d-block " alt="Chicago" width="1100" height="500" >
+                <img src="./img/San-andres/la-Isla-de-San-Andres-Colombia.jpg" class="d-block " style="filter: brightness(70%)" alt="Chicago" width="1100" height="500" >
+                <div class="carousel-caption">
+                    <h1>Jhony Kay Island</h1>
+                    <p>Relax and enjoy the nature!</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
+            </div>
+            <div class="carousel-item cartimg">
+                <img src="./img/Cartajena/ca-times.brightspotcdn.com_.jpg" class="d-block img-fluid " style="filter: brightness(60%)" alt="New York" width="1100" height="500">
+                <div class="carousel-caption">
+                    <h1>Cartajena City</h1>
+                    <p>Discover Cartagena de Indias</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/Cartajena/Cartagena_-_(Public__Domain)Nanisfer210119-070118.jpg" class="mx-auto d-block img-fluid" alt="New York" width="1100" height="500" object-fit= "cover">
+                <img src="./img/Cartajena/colombia-wideangle-view-scenic-cartagena-bay-bocagrande-panoramic-city-skyline_451699-1583.jpg" class=" d-block " style="filter: brightness(90%)" alt="Chicago" width="1100" height="500" >
+                <div class="carousel-caption">
+                    <h1>Baru beach</h1>
+                    <p>Visit the Beach at Barú!</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/Medellin/medellin-la-ciudad-colombiana-la-eterna-primavera.jpg" class="mx-auto d-block img-fluid" alt="New York" width="1100" height="500" >
+                <img src="./img/Medellin/downtown-medellin-colombia.webp" class="d-block img-fluid" alt="New York" style="filter: brightness(80%)" width="1100" height="500">
+                <div class="carousel-caption">
+                    <h1>Medellin City</h1>
+                    <p>Experience the culture and surroundings</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/Cartajena/ca-times.brightspotcdn.com_.jpg" class="mx-auto d-block img-fluid" alt="New York" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/Medellin/downtown-medellin-colombia.webp" class="mx-auto d-block img-fluid" alt="New York" width="1100" height="500">
+                <img src="./img/Medellin/medellin-la-ciudad-colombiana-la-eterna-primavera.jpg" class="d-block img-fluid" alt="New York" style="filter: brightness(100%)" width="1100" height="500" >
+                <div class="carousel-caption">
+                    <h1>Guatape</h1>
+                    <p>Experience the mountains and nature!</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
+                </div>
             </div>
         </div>
         
@@ -94,18 +127,23 @@
 
     <!-- /Main carousel  -->
 
-   <!-- Main Content  -->    
-<header class="jumbotron jumbotron-fluid">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col text-center"> 
-                <h1 class="mt-5 mb-4 pt-5 display-5"><span class="badge badge-primary">GET YOUR BAGS READY</span> </h1>
-                <h2 class="display-4 text-body">AND START A UNIQUE ADVENTURE!</h2>
-                <h3 class="pt-5 mb-5 pb-5 text-body">With unforgettable landscapes, indescribable flavors, more than 1,000 rhythms, and an incredibly warm population, the most welcoming place on Earth says “Hello”. Welcome, this is Colombia!</h3>
+   <!-- Main Content Jumbotron  -->    
+<header class="jumbotron jumbotron-fluid ">
+    <div class="container ">
+        <div class="row align-items-center jumbrow">
+            <div class="col text-center jumbtext "> 
+                <h1 class=""><span class="badge badge-primary">GET READY!</span> </h1>
+                <h1 class="">FOR A UNIQUE ADVENTURE!</h1>
             </div>
         </div>
     </div>
 </header>
+<!-- /Main Content Jumbotron  --> 
+
+<!-- Main Content Intro  -->  
+<div class="container">
+    <div class="row mt-5 mb-5"></div>
+</div>
 
 <div class="container">
     <div class="row mt-5">
@@ -114,18 +152,32 @@
                 <img class="img-fluid d-flex mr-5 img-thumbnail " src="./img/Colombia-Cafetales-1024x683.jpg " alt="Breadcrumb Trail" />
             </div>
         </div>
-        <div class="col-md-6 col-sm-12">            
+        <div class="col-md-6 col-sm-12 align-self-center">            
             <div class="media-body">
-                <p><span class="h2">D</span>iscover some stunning places that are hidden in the Caribbean Region; a zone that welcomes you with beautiful landscapes and an incredible biodiversity. <br><br>
-                            Warm weather and spectacular beaches characterize the Caribbean Region. The majority of its territory is flat, but it holds the highest coastal range in the world: the Snow Capped Sierra of Santa Marta. In its shores lies the Ciénaga Grande de Santa Marta Sanctuary (the Big Swamp of Santa Marta Sanctuary), composed of mangrove woods, rivers, spouts and swamps. This zone is of great importance for migrating birds from North America that find their refuge in it.<br><br>
-                            It is also home for the Los Colorados Sanctuary, a place where plant formations that comprehend tropical dry forest as well as rain forest, gallery forest and lowlands are found, and for the Los Flamencos Sanctuary where it is possible to witness tall and slender birds with pink plumage and, on occasions, sea turtles. <br>
-                </p>
+                <p><span class="h2">C</span>olombia is a topographically diverse country, where you’ll find mountainous regions, stretching plains, mysterious rainforests and—obviously—stunning, world-famous beaches. And just like its geography, its people are varied and charming. <br> <br> Colombians will always greet you with a smile on their face, are more than willing to help out anyone who might need it, and will no doubt share with you that joy they carry within them, making you feel right at home in the most welcoming place on Earth.</p>
             </div>
         </div>
-    </div>
+    </div>   
+    <div class="row mt-5">
+        <div class="col-md-6 col-sm-12 order-last order-md-first align-self-center">            
+            <div class="media-body">
+                <p><span class="h2">D</span>efined by natural wonder. Its lands are lush and fertile, and the culture is intrinsically connected to the natural world. <br> <br>This beautiful country inspires a sense of adventure—let the majestic landscapes charm you and explore unique locales that have been defined by a strong connection to nature.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5 mb-5 align-self-center">
+            <div class="media">
+                <img class="img-fluid d-flex mr-5 img-thumbnail " src="./img/Colombia-Cafetales-1024x683.jpg " alt="Breadcrumb Trail" />
+            </div>
+            </div>
+
+        </div>
 </div>
+<div class="container">
+    <div class="row mt-5 mb-5"></div>
+</div>
+<!-- /Main Content Intro  --> 
 
-
+<!-- Horizontal Selection -->
 <section>
     <div class="medcont">
         <div class="container">
@@ -161,8 +213,9 @@
         </div>
     </div>
 </section>
+<!-- Horizontal Selection -->
 
-   <!-- /Main Content  -->  
+
 
    <!-- Instagram feed  -->  
    <div class="container">
@@ -240,6 +293,8 @@
 
 
    <!-- /Instagram feed  -->  
+
+
 
 
 
