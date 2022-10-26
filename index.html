@@ -65,10 +65,10 @@
 
         </ul>
         <!-- The slideshow -->
-        <div class="carousel-inner">
+        <div class="carousel-inner carousel-iner-main">
             <div class="carousel-item active">
                 <img src="./img/San-andres/San-andres.webp" class=" d-block " style="filter: brightness(70%)" alt="Los Angeles" width="1100" height="500">
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>San Andres</h1>
                     <p>Explore the island with an amazing sea!</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -76,7 +76,7 @@
             </div>
             <div class="carousel-item">
                 <img src="./img/San-andres/la-Isla-de-San-Andres-Colombia.jpg" class="d-block " style="filter: brightness(70%)" alt="Chicago" width="1100" height="500" >
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>Jhony Kay Island</h1>
                     <p>Relax and enjoy the nature!</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -84,7 +84,7 @@
             </div>
             <div class="carousel-item cartimg">
                 <img src="./img/Cartajena/ca-times.brightspotcdn.com_.jpg" class="d-block img-fluid " style="filter: brightness(60%)" alt="New York" width="1100" height="500">
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>Cartajena City</h1>
                     <p>Discover Cartagena de Indias</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -92,7 +92,7 @@
             </div>
             <div class="carousel-item">
                 <img src="./img/Cartajena/colombia-wideangle-view-scenic-cartagena-bay-bocagrande-panoramic-city-skyline_451699-1583.jpg" class=" d-block " style="filter: brightness(90%)" alt="Chicago" width="1100" height="500" >
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>Baru beach</h1>
                     <p>Visit the Beach at Barú!</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -100,7 +100,7 @@
             </div>
             <div class="carousel-item">
                 <img src="./img/Medellin/downtown-medellin-colombia.webp" class="d-block img-fluid" alt="New York" style="filter: brightness(80%)" width="1100" height="500">
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>Medellin City</h1>
                     <p>Experience the culture and surroundings</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -108,7 +108,7 @@
             </div>
             <div class="carousel-item">
                 <img src="./img/Medellin/medellin-la-ciudad-colombiana-la-eterna-primavera.jpg" class="d-block img-fluid" alt="New York" style="filter: brightness(100%)" width="1100" height="500" >
-                <div class="carousel-caption">
+                <div class="carousel-caption carousel-caption-main">
                     <h1>Guatape</h1>
                     <p>Experience the mountains and nature!</p>
                     <button type="button" class="btn btn-outline-light btn-lg">Book now<a href=""></a></button>
@@ -149,7 +149,38 @@
     <div class="row mt-5">
         <div class="col-md-6 col-sm-12 mt-5 mb-5 align-self-center">
             <div class="media">
-                <img class="img-fluid d-flex mr-5 img-thumbnail " src="./img/Colombia-Cafetales-1024x683.jpg " alt="Breadcrumb Trail" />
+
+<!---Carousel1--->
+                    <div id="demo1" class="carousel slide " data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo1" data-slide-to="1"></li>
+                            <li data-target="#demo1" data-slide-to="2"></li>
+                        </ul>
+                    
+                        <!-- The slideshow -->
+                        <div class="carousel-inner carousel-inner2">
+                            <div class="carousel-item active carousel-item2">
+                                <img src="./img/small-carrusel/Woman-in-traditional-costume-against-the-backdrop-of-Cartagena-de-Indias.webp" class="img-thumbnail" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/small-carrusel/IMAGEN-5-800x450px.jpg" class="img-thumbnail" alt="Chicago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/small-carrusel/shutterstockRF_617151569-cropped.jpg" class="img-thumbnail" alt="New York">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" id="xxx" href="#demo1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next " href="#demo1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+<!---/Carousel1--->
             </div>
         </div>
         <div class="col-md-6 col-sm-12 align-self-center">            
@@ -166,11 +197,39 @@
         </div>
         <div class="col-md-6 col-sm-12 mt-5 mb-5 align-self-center">
             <div class="media">
-                <img class="img-fluid d-flex mr-5 img-thumbnail " src="./img/Colombia-Cafetales-1024x683.jpg " alt="Breadcrumb Trail" />
+<!---Carousel2--->
+                <div id="demo2" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo2" data-slide-to="1"></li>
+                        <li data-target="#demo2" data-slide-to="2"></li>
+                    </ul>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner carousel-inner3">
+                        <div class="carousel-item active">
+                            <img src="./img/small-carrusel/guacamaya-roja.webp" class="img-thumbnail" alt="Los Angeles">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/small-carrusel/Colibri-gigante.jpg" class="img-thumbnail" alt="Chicago">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/small-carrusel/16201157519_77533021a2_k.jpg" class="img-thumbnail" alt="New York">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+<!---/Carousel2--->
             </div>
-            </div>
-
         </div>
+
+    </div>
 </div>
 <div class="container">
     <div class="row mt-5 mb-5"></div>
@@ -194,7 +253,7 @@
         <div class="container">
             <div class="row ">
                 <div class="classmed col-5 mt-5 mb-5">
-                    <h1>Medellin City</h1>
+                    <h1>San Andres Island</h1>
                     <p> <span class="h2">D</span>iscover some stunning places that are hidden in the Caribbean Region; a zone that welcomes you with beautiful landscapes and an incredible biodiversity. <br><br>
                     <button class="btn btn-primary" type="button"> More info </button>
                 </div>
@@ -205,7 +264,7 @@
         <div class="container">
             <div class="row ">
                 <div class="classmed col-5 mt-5 mb-5">
-                    <h1>Medellin City</h1>
+                    <h1>Cartagena City</h1>
                     <p> <span class="h2">D</span>iscover some stunning places that are hidden in the Caribbean Region; a zone that welcomes you with beautiful landscapes and an incredible biodiversity. <br><br>
                     <button class="btn btn-primary" type="button"> More info </button>
                 </div>
@@ -218,81 +277,57 @@
 
 
    <!-- Instagram feed  -->  
-   <div class="container">
+   <div class="container-fluid divinstagram">
         <div class="row ">
             <div class="col">
-                <iframe src="https://www.instagram.com/p/Cj6XGfHORbD/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CkCE3i7OyYd/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="200" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            </div>
-            <div class="col">
-                <iframe src="https://www.instagram.com/p/CjgG3wIu2Kv/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <div class="elfsight-app-b63758b9-7388-467d-98c6-356cab9aba81"></div>
             </div>
         </div>
     </div>
-
-
    <!-- /Instagram feed  -->  
+
+   <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="#">Home</a></li>
+                    <li><a class="text-white" href="aboutus.html">About</a></li>
+                    <li><a class="text-white" href="#">Sites</a></li>
+                    <li><a class="text-white" href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 text-center" >
+                <h3>Social</h3>
+                <div class="row">
+                    <div class="col p-0">
+                        <a class="text-white" href="http://instagram.com/"><h1><i class="fa fa-instagram"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href="http://facebook.com/"><h1><i class="fa fa-facebook"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href="http://twitter.com/"><h1><i class="fa fa-twitter"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href="http://youtube.com/"><h1><i class="fa fa-youtube"></i></h1></a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-4 text-center">
+                <h3>Contact us</h3>
+                <a role="button" href="tel:+12056546854" class="btn btn-link text-white"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                <a role="button" href="mailto.campsites@nucamp.com" class="btn btn-link text-white"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+
+
+
+
 
 
 
@@ -302,6 +337,9 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="./run.js"></script> 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+
 
 </body>
 </html>

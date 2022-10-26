@@ -27,24 +27,24 @@ nav{
 /* ---- /Navbar---- */
 
 /* ---- Carousel---- */
-.carousel-inner img{
+.carousel-iner-main img{
     object-fit: cover;
     background-size: contain;
     width: 100%;
     height: 100vh;
 }
-.carousel-caption{
+.carousel-caption-main{
 margin-bottom: 35vh;
 }
-.carousel-caption h1{
+.carousel-caption-main h1{
     font-family: 'Carattere', cursive;
     font-size: 4rem;
     text-shadow: 2px 2px 4px #000000;
 }
-.carousel-inner{
+.carousel-iner-main{
     box-shadow: 0px 100px 100px rgba(198, 201, 245, 0.9);
 }
-.carousel-inner button{
+.carousel-iner-main button{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -68,46 +68,90 @@ margin-bottom: 35vh;
 .jumbrow{
     height: 60vh;
 }
-
-
-
 /* ---- /Main Jumbotron---- */
 
 
 
+/* ---- Carousel Secondary---- */
+.carousel-inner2 img, .carousel-inner3 img{
+    object-fit: cover;
+    background-size: contain;
+    width: 600px;
+    height: 300px;
+    filter: brightness(80%)
+
+}
+.carousel-inner2 img:hover, .carousel-inner3 img:hover {
+    filter: brightness(100%);
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+
+
+/* ---- /Carousel Secondary---- */
 
 /*--- Horizontal section-- */
-
-.cartcont{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/Cartajena/foto\ grande\ AL\ DIA_15.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.classmed{
+    .classmed{
     color: white;
     border-left: solid 2px;
+    }
+    .cartcont{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/Cartajena/foto\ grande\ AL\ DIA_15.jpg");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-shadow: 2px 2px 4px #000000;
     }
     .medcont{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/Medellin/la-piedra-del-penol-guatapae-1200x900.webp");
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+        text-shadow: 2px 2px 4px #000000;
     }
     .sancont{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/San-andres/san-andres2.webp");
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
+        text-shadow: 2px 2px 4px #000000;
     }
+    .medcont:hover, .sancont:hover, .cartcont:hover {
+        filter: brightness(180%);
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    section button{
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+
  /*---/ Horizontal section-- */
 
 
+ .divinstagram{
+    margin-top: 200px;
+ }
 
 
+/*--- footer-- */
+    .site-footer {
+        margin-top: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: linear-gradient(#4570e6, rgb(45, 74, 218));
+        color: white;
+    }
 
 
-
+/*--- footer-- */
 
 
 
