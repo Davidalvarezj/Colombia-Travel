@@ -4,9 +4,449 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Travel San Andres</title>
 </head>
 <body>
-    
+       <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+        <div class="container contnav">
+            <a class="navbar-brand " href="./index.html"><p class="pt-1 pl-lg-5 logo mb-0"> Colombia-travel  &nbsp <small><i class="fa fa-globe" aria-hidden="true"></i></small></p></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapse1"><span class="navbar-toggler-icon"></span></button>
+            <div class="colapse navbar-collapse justify-content-end pr-lg-5" id="colapse1">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item"><a class="nav-link h5" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link h5" href="./medellin.html">Medellin</a></li>
+                    <li class="nav-item dropdown active "><a class="nav-link dropdown-toggle h5" href="#" id="navbardrop" data-toggle="dropdown">San Andres</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-white" href="#citytour-sanandres">City tour</a>
+                            <a class="dropdown-item text-white" href="#jhonykay-tour">Jhony Kay Island</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link h5" href="./cartajena.html" >Cartagena</a></li>
+                </ul>
+            </div>  
+        </div>        
+    </nav>
+    <!-- /Navbar -->
+
+   <!-- Main Content Jumbotron  -->    
+   <header class="">
+    <div class="jumb-sanandres">
+    </div>
+    <div class="container">
+        <div class="row mt-5 pt-3">
+            <div class="col  mt-5"> 
+                <h1 class="">San Andres Island</h1>
+            </div>
+        </div>
+        <div class="row mb-5 pb-5 row-content ">
+            <div class="col-sm-12 col-md-6 text-justify "> 
+                <p class=""><span class="h2">S</span>an Andrés is a small Colombian island off Nicaragua in the Caribbean. 
+                    It’s known for its white-sand beaches, coconut palms, clear water and all-inclusive resorts. <br><br>
+                    Part of an archipelago that includes Providencia and Santa Catalina, the island has a culture blending Latin American, English and Creole influences.
+                    <br><br> It's also home to expansive coral reefs and diverse marine life.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 text-center pb-5 align-self-center "> 
+                <img class="img-medellin-info" src="./img/San-andres/san-andres4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /Main Content Jumbotron  --> 
+
+<!-- Background img  --> 
+<section class="container-fluid cont-sanandres-img" id="citytour-sanandres">
+    <div class="container">
+        <div class="row ">
+            <div class="col text-center text-white ">
+                <h1>Explore San Andres!</h1> 
+            </div> 
+        </div>              
+    </div>
+</section>
+<!-- /Background img   --> 
+
+<!-- City Tour  --> 
+<div class="container">
+    <div class="row mt-5 ">
+        <div class="col mt-5">
+        </div>
+    </div>
+    <div class="row mt-5 pb-1">
+        <div class="col  text-justify">            
+            <h2 class="font-weight-bold">City Tour</h2>
+            <p>Explore the best citytour in San Andres Island we will visit one of the most beautiful areas of the island with magical sunsets surrounded by lush forests that give it a spectacular natural setting where the history with tourism, biodiversity and the importance of landscape.
+              <br><br>Points of interest you will find on the tour: the islander's house museum, Main park walk, Morgan's cave and the acurium pool.</p>
+            <p>All inclusive tour starting everyday at 9:00 AM, finish at 6:00 pm.</p>
+            <a href="#" class="btn btn-lg btn-primary button-costume mt-3" data-toggle="modal" data-target="#bookModal">Book now</a>
+        </div>
+        <div class="col">
+            <div class="media">
+                <!-- Carrousel citi tour -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner city-tour-img">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/San-andres/72a5cc879900c5c7472053668af951e7.jpg " alt="Third slide">
+                          </div>
+                        <div class="carousel-item ">
+                            <img class="d-block w-100" src="./img/San-andres/avenida-providencia-san-andresjpg.webp" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/glueckliches-weibliches-schwules-paar-verschiedener-nationalitaeten-umarmen-sich-lachen-freudig-und-gegen-klippe-und-seelandschaft-gleichgeschlechtlic.webp" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/San-andres.webp" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/san_andres_west_view1.jpg" alt="Third slide">
+                      </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <!-- /Carrousel citi tour -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">  
+    <div class="row row-content mb-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Included</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-car fa-lg"></i> Transport tour</li>
+                    <li class="list-group-item"><i class="fa fa-user fa-lg"></i> Guide assistance</li>
+                    <li class="list-group-item"><i class="fa fa-cutlery fa-lg"></i> Lunch</li>
+                    <li class="list-group-item"><i class="fa fa-beer fa-lg"></i> Soft Drinks</li>  
+                    <li class="list-group-item"><i class="fa fa-eye fa-lg"></i> Sightseeing</li>                  
+                </ul>
+            </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Places to visit</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> House Museum</li>
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> Main Park</li>
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> Acuarium Pool</li>
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> Morgan's Cave</li>  
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> West Beach</li>                  
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Excluded</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-plane fa-lg"></i> Fligth</li>
+                    <li class="list-group-item"><i class="fa fa-bed fa-lg"></i> Hotel</li>                 
+                </ul>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Prices</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-bus fa-lg"></i> <span class="text-black font-weight-bold"> Shared &nbsp &nbsp &nbsp &nbsp</span>     $75</li>
+                    <li class="list-group-item"> <i class="fa fa-car fa-lg"></i><span class="text-black font-weight-bold"> Private &nbsp &nbsp &nbsp &nbsp</span>    $150</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5 pt-1">
+
+    </div>
+</div> 
+<!-- /City Tour  --> 
+
+
+ <!-- ---Reserve Modal Window-- -->
+ <div id="bookModal" class="modal fade" role="dialog">
+    <div class="modal-md modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h3 class="modal-title">Reserve a Tour in San Andres</h3>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="" id="reserveForm">
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-6"for="">Type of Tour:</label>
+                            <div class="col ">
+                                <select class="form-control" id="numCampers">
+                                    <option value="0">Select...</option>
+                                    <option value="1">San Andres City Tour</option>
+                                    <option value="2">Jhony Kay Tour</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-6" for="">Date</label>
+                            <div class="col col-sm-6 ">
+                                <input type="date" id="date" name="date" placeholder="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-form-label col-sm-6" for="">Number of People:</label>
+                            <div class="col col-sm-6 ">
+                                <input type="number" placeholder="0" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-form-label col-sm-6 offset-6">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="yes" name="contactRadio" value="yes"> 
+                                    <label for="yes"  class="col-form-label font-weight-bold">Shared tour</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="no" name="contactRadio" value="no"> 
+                                    <label for="no" class="col-form-label font-weight-bold"> Private tour</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col">
+                                <button class="btn btn-secondary " data-dismiss="modal" type="submit">Cancel</button>
+                                <button class="btn btn-primary " type="submit">Proceed</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---/Reserve Modal Window-- -->
+
+
+
+
+
+<!-- Background img  --> 
+<section class="container-fluid cont-jhonykay-img" id="jhonykay-tour">
+    <div class="container ">
+        <div class="row ">
+            <div class="col text-center text-white ">
+                <h1>Discover Jhony Kay!</h1> 
+            </div> 
+        </div>              
+    </div>
+</section>
+<!-- /Background img   --> 
+
+<!-- Guatape Tour  --> 
+<div class="container">
+    <div class="row mt-5 ">
+        <div class="col mt-5">
+        </div>
+    </div>
+    <div class="row mt-5 pb-1">
+        <div class="col  text-justify">            
+            <h2 class="font-weight-bold">Jhony Kay Tour</h2>
+            <p>Enjoy the beautiful and exclusive island with amazing beaches with all the amenities for a boat ride, snorkeling, swimming and relaxation on the beach. <br> <br>
+            </p>
+            <p>All inclusive tour starting everyday at 9:00 AM, finish at 4:00 pm.</p>
+            <a href="#" class="btn btn-lg btn-primary button-costume mt-3" data-toggle="modal" data-target="#bookModal">Book now</a>
+        </div>
+        <div class="col">
+            <div class="media">
+                <!-- Carrousel Guatape Tour -->
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner city-tour-img">
+                        <div class="carousel-item  active">
+                            <img class="d-block w-100" src="./img/San-andres/san-andres-colombia-praia-mar.jpg" alt="Third slide">
+                          </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/marin-life.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/Jumping+In+2.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/4875b455-f117-49b0-ad83-7e6d6a8cb209.webp" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/turttle2.webp" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/San-andres/exotic-tropical-beach-landscape-background-wallpaper-tranquil-beach-scene-travel-inspirational-summer-holiday-vacation-concept-tourism-relaxing_1484-2483.webp" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            <!-- /Carrousel citi tour -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">  
+    <div class="row row-content mb-5">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Included</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-ship fa-lg"></i> Boat tour</li>
+                    <li class="list-group-item"><i class="fa fa-user fa-lg"></i> Guide assistance</li>
+                    <li class="list-group-item"><i class="fa fa-cutlery fa-lg"></i> Lunch </li>
+                    <li class="list-group-item"><i class="fa fa-beer fa-lg"></i> Soft Drinks</li>  
+                    <li class="list-group-item"><i class="fa fa-eye fa-lg"></i> Sightseeing</li>                  
+                </ul>
+            </div>
+        </div>
+        <div class="col mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Places to visit</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> West Kay view</li> 
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> Jhony kay Island</li>
+                    <li class="list-group-item"><i class="fa fa-check-circle-o  fa-lg"></i> Snorkeling spot</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Excluded</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-plane fa-lg"></i> Fligth</li>
+                    <li class="list-group-item"><i class="fa fa-bed fa-lg"></i> Hotel</li>                 
+                </ul>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="font-weight-bold">Prices</h5>
+                </div>
+                <ul class="list-group list-group-flush pl-2">
+                    <li class="list-group-item"><i class="fa fa-bus fa-lg"></i> <span class="text-black font-weight-bold"> Shared &nbsp &nbsp &nbsp &nbsp</span>     $350</li>
+                    <li class="list-group-item"> <i class="fa fa-car fa-lg"></i><span class="text-black font-weight-bold"> Private &nbsp &nbsp &nbsp &nbsp</span>    $580</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5 pt-1">
+
+    </div>
+</div>   
+<!-- /Guatape Tour  --> 
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 text-center pt-4">
+                <a class="navbar-brand " href="#"><p class="pt-1 pl-lg-5 logo text-white"> Colombia-travel  &nbsp <small><i class="fa fa-globe" aria-hidden="true"></i></small></p></a>
+                <ul class="list-unstyled">
+                    <li><a class="text-white" href="./aboutus.html">About Us</a></li>
+                    <li><a class="text-white" href="./medellin.html">Medellin Tours</a></li>
+                    <li><a class="text-white" href="./san-andres.html">San Andres Tours</a></li>
+                    <li><a class="text-white" href="./cartajena.html">Cartagena Tours</a></li>
+
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 text-center pt-4 my-auto" >
+                <div class="row">
+                    <div class="col p-0 ">
+                        <a class="text-white" target="_blank" href="https://www.instagram.com/colombia.travel/"><h1><i class="fa fa-instagram"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href=""><h1><i class="fa fa-facebook"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href=""><h1><i class="fa fa-twitter"></i></h1></a>
+                    </div>
+                    <div class="col p-0">
+                        <a class="text-white" href=""><h1><i class="fa fa-youtube"></i></h1></a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-12 col-lg-4 text-center pt-3 my-auto">
+                <h3></h3>
+                <a role="button" href="tel:+12056546854" class="btn btn-link text-white"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                <a role="button" href="mailto.campsites@nucamp.com" class="btn btn-link text-white"><i class="fa fa-envelope-o"></i> support@colombiatravel.com</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="./run.js"></script> 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+
+
 </body>
 </html>

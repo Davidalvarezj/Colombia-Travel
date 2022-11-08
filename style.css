@@ -11,12 +11,19 @@ nav{
 }
 
 .dropdown-menu{
-    top: 50px;
-    background: rgba(255, 255, 255, 0.3);
+    top: 40px;
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.5px);
     border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.dropdown-item:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+.dropdown-dark{
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .nav-active {
@@ -25,7 +32,7 @@ nav{
 }
 
 /* ---- /Navbar---- */
-
+/*------Main Page------------*/
 /* ---- Carousel---- */
 .carousel-iner-main img{
     object-fit: cover;
@@ -34,13 +41,20 @@ nav{
     height: 100vh;
 }
 .carousel-caption-main{
-margin-bottom: 35vh;
+    margin-bottom: 35vh;
 }
 .carousel-caption-main h1{
     font-family: 'Carattere', cursive;
     font-size: 4rem;
     text-shadow: 2px 2px 4px #000000;
 }
+
+.logo{
+    font-family: 'Carattere', cursive;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000000; 
+}
+
 .carousel-iner-main{
     box-shadow: 0px 100px 100px rgba(198, 201, 245, 0.9);
 }
@@ -52,7 +66,7 @@ margin-bottom: 35vh;
 
 
 /* ---- Main Jumbotron---- */
-.jumbotron{
+.jumbotron-main{
     margin-top: 0px;
     color: white;
     background-image:url(./img/San-andres/excursion-punta-cana-snorkeling.jpg);
@@ -71,27 +85,31 @@ margin-bottom: 35vh;
 /* ---- /Main Jumbotron---- */
 
 
-
 /* ---- Carousel Secondary---- */
 .carousel-inner2 img, .carousel-inner3 img{
     object-fit: cover;
     background-size: contain;
     width: 600px;
     height: 300px;
-    filter: brightness(80%)
+    filter: brightness(70%);
+;
 
 }
-.carousel-inner2 img:hover, .carousel-inner3 img:hover {
-    filter: brightness(100%);
+#carrusel1{
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4)
+}
+.ove:hover {
+
+    background: rgba(0, 0, 0, 0.9);
+    filter: brightness(140%);
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    transition: all 1s ease; 
+
 }
-
-
-
 
 /* ---- /Carousel Secondary---- */
 
@@ -106,6 +124,7 @@ margin-bottom: 35vh;
         background-repeat: no-repeat;
         background-size: cover;
         text-shadow: 2px 2px 4px #000000;
+        box-shadow: 20px 20px 20px rgba(89, 90, 90, 0.4);
     }
     .medcont{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/Medellin/la-piedra-del-penol-guatapae-1200x900.webp");
@@ -120,43 +139,284 @@ margin-bottom: 35vh;
         background-repeat: no-repeat;
         background-size: cover;
         text-shadow: 2px 2px 4px #000000;
+        
+        
     }
     .medcont:hover, .sancont:hover, .cartcont:hover {
-        filter: brightness(180%);
+        filter: brightness(130%);
         transition: all 1s ease;
         -moz-transition: all 1s ease;
         -o-transition: all 1s ease;
         -ms-transition: all 1s ease;
         transition: all 1s ease;
+        
     }
-    section button{
+    .button-costume{
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     }
 
  /*---/ Horizontal section-- */
 
-
  .divinstagram{
     margin-top: 200px;
  }
 
-
 /*--- footer-- */
     .site-footer {
-        margin-top: 200px;
+        margin-top: 50px;
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: linear-gradient(#4570e6, rgb(45, 74, 218));
+        background-image: linear-gradient(.25turn, #2a3f78, #4f5d81);
         color: white;
     }
 
-
 /*--- footer-- */
-
-
 
  @media (max-width: 640px) {
     .jumbtext h1{
       font-size: 2rem;
     }
   }
+
+  /*------ /Main Page------------*/
+
+    /*------ About Us------------*/
+    .jumb-aboutus{
+        margin-top: 0px;
+        color: black;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/AboutUs/top-view-landscape-beautiful-tropical-sea-summer-season-image-by-aerial-view-drone-shot-high-angle-view_34362-559.jpg");
+        box-shadow: 0px 100px 100px rgba(102, 222, 241, 0.1);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px
+    }
+    .img-aboutus-grup{
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    }
+    .cont-team{
+        margin-top: 0px;
+        color: black;
+        background-image: linear-gradient(.25turn, #dde1ec, #eef0f2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    }
+    .img-facility{
+        width: 500px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px rgba(89, 90, 90, 0.4);
+    }
+    .customers-review{
+        background-image: linear-gradient(.25turn, #ededed, #f9f9f9);
+    }
+    .card-team{
+        box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    }
+    /*------ /About Us------------*/
+
+/*------ Medellin------------*/
+.jumb-medellin{
+    margin-top: 0px;
+    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Medellin/downtown-medellin-colombia.webp");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+}
+
+.img-medellin-info{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+
+.cont-med-img{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Medellin/downtown-medellin-colombia.webp");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+.cont-med-img h1, .cont-med-img-guatape h1{
+    font-family: 'Carattere', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.row-content{
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.city-tour-img{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+}
+.cont-med-img-guatape{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Medellin/Diego-Vista-aerea-Guatape.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+.button-custom{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+/*------ /Medellin------------*/
+
+/*------ San Andres ------------*/
+.jumb-sanandres{
+    margin-top: 0px;
+    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/San-andres/San-andres.webp");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: left;
+}
+
+.img-medellin-info{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+
+.cont-sanandres-img{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/San-andres/san-andres-colombia-03.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 100px;
+}
+.cont-sanandres-img h1, .cont-jhonykay-img h1{
+    font-family: 'Carattere', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.row-content{
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.city-tour-img{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+}
+.cont-jhonykay-img{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/San-andres/la-Isla-de-San-Andres-Colombia.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+.button-custom{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+/*------ /San Andres------------*/
+
+/*------ Cartagena ------------*/
+.jumb-cartagena{
+    margin-top: 0px;
+    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("./img//Cartajena/81.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+}
+
+.img-medellin-info{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+
+.cont-cartagena-img{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Cartajena/ca-times.brightspotcdn.com_.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 100px;
+}
+.cont-cartagena-img h1, .cont-rosario-img h1{
+    font-family: 'Carattere', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.row-content{
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.city-tour-img{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    border-radius: 10px;
+    object-fit: cover;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+}
+.cont-rosario-img{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Cartajena/Islas_del_Rosario.jpg");
+    box-shadow: 0px 100px 100px rgba(102, 120, 241, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+.button-custom{
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+/*------ /Cartagena------------*/
