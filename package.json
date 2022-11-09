@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "usemin": "usemin cartagena.html -d dist --htmlmin -o dist/cartagena.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html  && usemin medellin.html -d dist --htmlmin -o dist/medellin.html  && usemin san-andres.html -d dist --htmlmin -o dist/san-andres.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
@@ -12,7 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.2.0",
     "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2",
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
