@@ -56,6 +56,14 @@ nav{
     font-size: 4rem;
     text-shadow: 2px 2px 4px #000000;
 }
+.firma{
+    font-family: 'Carattere', cursive;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.firma:hover{
+    text-decoration: none;
+}
 
 .logo{
     font-family: 'Carattere', cursive;
@@ -126,6 +134,7 @@ nav{
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.8);
 }
 /* ---- /Carousel Secondary---- */
 
@@ -295,14 +304,17 @@ nav{
     box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
     border-radius: 10px;
     object-fit: cover;
-    height: 100%;
+    width: 500px;
+    height: 300px;
     filter: brightness(80%); 
 }
-.media{
+
+.media-custom{
     width: 500px;
     height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.8);
 }
 
 .carousel-custom:hover {
@@ -332,6 +344,16 @@ nav{
 }
 .button-custom{
     box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+}
+
+
+.youtubecard{
+   
+    border-radius: 10px;
+}
+.youtubecard img{
+
+    border-radius: 10px;
 }
 /*------ /Medellin------------*/
 
@@ -471,11 +493,9 @@ nav{
     .dropdown-menu{
         background: rgba(0, 0, 0, 0.6);
     }
-
-
     .carousel-inner2, .carousel-inner3{
         width: 350px;
-        height: 200px;
+        height: 210px;
     }
     .media2{
         width: 350px;
@@ -486,7 +506,7 @@ nav{
         height: 210px;
     }
 
-    .media{
+    .media-custom{
         width: 360px;
         height: 220px;
 
@@ -495,6 +515,10 @@ nav{
 
         width: 360px;
         height: 220px;
+    }
+    .cont-med-img, .cont-med-img-guatape, .cont-sanandres-img, .cont-jhonykay-img, .cont-cartagena-img, .cont-rosario-img{
+        background-attachment:scroll;
+
     }
 
   }

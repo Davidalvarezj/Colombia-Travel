@@ -15,7 +15,7 @@ window.onscroll = function() {
 };
 
 
-$("#demo").carousel({interval:3000});
+$("#demo").carousel({interval:4000});
 
 const div_carr1 = document.querySelector('.div1')
 const div_carr2 = document.querySelector('.div2')
@@ -34,7 +34,7 @@ const img_main6 = document.querySelector('#img-main6')
 $(function (){
     img_main1.classList.add("zoomIn");
 });
-const options = {
+const options1 = {
   attributes: true
 }
 
@@ -91,9 +91,13 @@ function callback(mutationList, observer) {
 }
 
 const observer = new MutationObserver(callback)
-observer.observe(div_carr1, options)
-observer.observe(div_carr2, options)
-observer.observe(div_carr3, options)
-observer.observe(div_carr4, options)
-observer.observe(div_carr5, options)
-observer.observe(div_carr6, options)
+observer.observe(div_carr1, options1)
+observer.observe(div_carr2, options1)
+observer.observe(div_carr3, options1)
+observer.observe(div_carr4, options1)
+observer.observe(div_carr5, options1)
+observer.observe(div_carr6, options1)
+
+
+//---------------------------------------------------
+//---   Youtube API  ------------------
