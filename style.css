@@ -34,11 +34,19 @@ nav{
 /* ---- /Navbar---- */
 /*------Main Page------------*/
 /* ---- Carousel---- */
+
+
+  
+.zoomIn {
+    transform: scale(1.2);
+  }
+
 .carousel-iner-main img{
     object-fit: cover;
     background-size: contain;
     width: 100%;
     height: 100vh;
+    transition: transform 5s;
 }
 .carousel-caption-main{
     margin-bottom: 35vh;
@@ -55,9 +63,6 @@ nav{
     text-shadow: 2px 2px 4px #000000; 
 }
 
-.carousel-iner-main{
-    box-shadow: 0px 100px 100px rgba(198, 201, 245, 0.9);
-}
 .carousel-iner-main button{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
@@ -69,11 +74,11 @@ nav{
 .jumbotron-main{
     margin-top: 0px;
     color: white;
-    background-image:url(./img/San-andres/excursion-punta-cana-snorkeling.jpg);
-    filter: brightness(80%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./img/San-andres/excursion-punta-cana-snorkeling.jpg");
     box-shadow: 0px 100px 100px rgba(102, 222, 241, 0.1);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .jumbtext h1{
     font-size: 3rem;
@@ -89,28 +94,39 @@ nav{
 .carousel-inner2 img, .carousel-inner3 img{
     object-fit: cover;
     background-size: contain;
-    width: 600px;
+    width: 450px;
     height: 300px;
-    filter: brightness(70%);
-;
-
+    filter: brightness(80%);
+    border-radius: 10px;
+}
+.carousel-inner2, .carousel-inner3{
+    object-fit: cover;
+    background-size: contain;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
 }
 #carrusel1{
     position: relative;
-    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4)
+    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+
 }
 .ove:hover {
-
+    border-radius: 10px;
     background: rgba(0, 0, 0, 0.9);
-    filter: brightness(140%);
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease; 
-
+    filter: brightness(150%);
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease; 
 }
-
+.media2{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
 /* ---- /Carousel Secondary---- */
 
 /*--- Horizontal section-- */
@@ -143,12 +159,14 @@ nav{
         
     }
     .medcont:hover, .sancont:hover, .cartcont:hover {
-        filter: brightness(130%);
-        transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+        filter: brightness(150%);
+        transition: all 3s ease;
+        -moz-transition: all 3s ease;
+        -o-transition: all 3s ease;
+        -ms-transition: all 3s ease;
+        transition: all 3s ease;
+        transform: scale(1.1);
+   
         
     }
     .button-costume{
@@ -172,11 +190,7 @@ nav{
 
 /*--- footer-- */
 
- @media (max-width: 640px) {
-    .jumbtext h1{
-      font-size: 2rem;
-    }
-  }
+
 
   /*------ /Main Page------------*/
 
@@ -204,17 +218,35 @@ nav{
         padding: 100px 0;
         box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
     }
-    .img-facility{
-        width: 500px;
-        height: 350px;
-        border-radius: 10px;
-        box-shadow: 0px 10px 10px rgba(89, 90, 90, 0.4);
-    }
     .customers-review{
         background-image: linear-gradient(.25turn, #ededed, #f9f9f9);
     }
     .card-team{
         box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    }
+
+    .div-img-facility{
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px rgba(89, 90, 90, 0.4);
+        overflow: hidden;
+        width: 500px;
+        height: 350px;
+    }
+    .img-facility{
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .img-facility:hover{
+        transform: scale(1.2);
+        transition: transform 5s;
+        
+    }
+
+    .iframe-maps{
+        width: 560px;
+        height: 350px;
+        border: none;
     }
     /*------ /About Us------------*/
 
@@ -234,8 +266,8 @@ nav{
     height: 300px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
+    object-fit: cover;
 }
-
 .cont-med-img{
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Medellin/downtown-medellin-colombia.webp");
@@ -263,10 +295,28 @@ nav{
     box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
     border-radius: 10px;
     object-fit: cover;
-    background-size: contain;
+    height: 100%;
+    filter: brightness(80%); 
+}
+.media{
     width: 500px;
     height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
 }
+
+.carousel-custom:hover {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    filter: brightness(150%);
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease; 
+    transform: scale(1.1);
+}
+
 .cont-med-img-guatape{
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Medellin/Diego-Vista-aerea-Guatape.jpg");
@@ -327,14 +377,7 @@ nav{
     border-bottom: 1px ridge;
     min-height: 200px;
 }
-.city-tour-img{
-    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
-    border-radius: 10px;
-    object-fit: cover;
-    background-size: contain;
-    width: 500px;
-    height: 300px;
-}
+
 .cont-jhonykay-img{
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/San-andres/la-Isla-de-San-Andres-Colombia.jpg");
@@ -395,14 +438,7 @@ nav{
     border-bottom: 1px ridge;
     min-height: 200px;
 }
-.city-tour-img{
-    box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
-    border-radius: 10px;
-    object-fit: cover;
-    background-size: contain;
-    width: 500px;
-    height: 300px;
-}
+
 .cont-rosario-img{
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./img/Cartajena/Islas_del_Rosario.jpg");
@@ -420,3 +456,49 @@ nav{
     box-shadow: 10px 10px 10px rgba(89, 90, 90, 0.4);
 }
 /*------ /Cartagena------------*/
+
+
+/*------ Movile view------------*/
+
+@media (max-width: 640px) {
+    .jumbtext h1{
+      font-size: 2rem;
+    }
+    nav{
+        background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .dropdown-menu{
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+
+    .carousel-inner2, .carousel-inner3{
+        width: 350px;
+        height: 200px;
+    }
+    .media2{
+        width: 350px;
+        height: 210px;
+
+    }
+    .img-aboutus-grup{
+        height: 210px;
+    }
+
+    .media{
+        width: 360px;
+        height: 220px;
+
+    }
+    .city-tour-img{
+
+        width: 360px;
+        height: 220px;
+    }
+
+  }
+
+
+
+  /*------ /Movile view------------*/
